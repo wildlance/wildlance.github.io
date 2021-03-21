@@ -28,7 +28,7 @@
 	var video = document.querySelector("#videoElement");
 
 	if (navigator.mediaDevices.getUserMedia) {
-	  navigator.mediaDevices.getUserMedia({ facingMode: { exact: "environment" } })
+	   navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
 		.then(function (stream) {
 		  video.srcObject = stream;
 		})
