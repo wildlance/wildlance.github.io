@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | BarniDinoWebAR</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 720px; height: 1280px; background: #231F20"></canvas>
+    <script src="Build/Build20210507T034049_2020.3.1f1_DeviceCameraWebGL_fpsInfo.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Build20210507T034049_2020.3.1f1_DeviceCameraWebGL_fpsInfo.data",
+        frameworkUrl: "Build/Build20210507T034049_2020.3.1f1_DeviceCameraWebGL_fpsInfo.framework.js",
+        codeUrl: "Build/Build20210507T034049_2020.3.1f1_DeviceCameraWebGL_fpsInfo.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "WILDCAT",
+        productName: "BarniDinoWebAR",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
